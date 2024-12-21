@@ -1,7 +1,7 @@
 import { FaUserAlt } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import PropTypes from 'prop-types';
-import s from './List.module.css';
+import s from './Contact.module.css';
 
 const List = ({ data: { id, name, number }, onDelete }) => {
     return (

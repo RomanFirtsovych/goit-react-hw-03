@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import List from '../List/List';
+import Contact from '../Contact/Contact';
 import s from './ContactList.module.css'
 
 const ContactList = ({ book, onDelete }) => {
@@ -7,7 +7,7 @@ const ContactList = ({ book, onDelete }) => {
         <ul className={s.phoneBook}>
             {book.map((book) => (
                 <li key={book.id}>
-                    <List data={book} onDelete={onDelete} />
+                    <Contact data={book} onDelete={onDelete} />
                 </li>
             ))}
         </ul>
